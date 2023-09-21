@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+::after, ::before {
+    box-sizing: border-box;
+}
+img {
+    max-width: 100%;
+}
+html {
+    height: 100%;
+}
+body {
+    font-family: 'Maven Pro', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.main {
+    background-color: #dedede;
+    width: 95%;
+    margin: 15px auto 0;
+    border-radius: 6px;
+}
+.main--head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.logo {
+    width: 90px;
+}
+.main--head h1 {
+    font-size: 30px;
+}
+.overlay {
+    width: 90%;
+    height: 260px;
+    margin: 20px auto;
+    background-color: #3cb7f0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 6px;
+}
+.overlay--image {
+    width: 200px;
+}
+.overlay--text {
+    width: 90%;
+    position: absolute;
+    bottom: 10px;
+    left: 11px;
+    font-size: 17px;
+    color: #fff;
+}
+.stay {
+    font-style: italic;
+    text-align: center;
+    margin: 7px 0;
+}
+.tuned {
+    font-style: normal;
+    color: #3cb7f0;
+    font-weight: 700;
+}
+.footer {
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #dedede;
+}
+.social {
+    display: flex;
+    width: 150px;
+    justify-content: space-between;
+    align-items: center;
+}
+.social--icon {
+    width: 28px;
+}
+.location {
+    margin: 23px 0;
+}
+.location--icon {
+    width: 20px;
+    transform: translateY(5px);
+}
+.contact-info {
+    padding-bottom: 5px;
+}
+.contact--label {
+    margin-bottom: 8px;
+    font-weight: 700;
+}
+.contact--icon {
+    width: 12px;
+}
+.copyright {
+    margin-bottom: 10px;
+}
