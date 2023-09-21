@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="resources/images/TBW_Transparent_Logo.png" >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <title>Truth By Will</title>
+</head>
+<body>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Maven Pro', sans-serif;
+        }
+        ::after, ::before  {
+            box-sizing: border-box;
+        }
+        .welcome-cont {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+        }
+        .welcome {
+            background-color: #edecec;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            /* gap: 30px; */
+            width: 80%;
+            height: 90%;
+            margin: 0 auto;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .welcome--main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .logo {
+            width: 120px;
+        }
+        .overlay {
+            width: 250px;
+            position: relative;
+        }
+        .rocket {
+            width: 200px;
+        }
+        .welcome--text {
+            position: absolute;
+            font-size: 25px;
+            font-weight: 800;
+            bottom: 0;
+            left: 0;  
+        }
+        footer {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            /* background-color: red; */
+        }
+        .social-and-address{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            /* background-color: yellow; */
+        }
+        .social-label, .contact-label {
+            margin-bottom: 7px;
+            font-weight: 700;
+        }
+        .social-medias {
+            width: 150px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .social-medias a {
+            text-decoration: none;
+        }
+        .icons {
+            width: 25px;
+        }
+        .icons:hover {
+            opacity: 0.8;
+        }
+        .address {
+            display: flex;
+            justify-content: center;
+        }
+        .location-icon {
+            width: 20px;
+        }
+        .contact {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            /* background-color: green; */
+        }
+        .contact--info {
+            display: flex;    
+            align-items: center;
+            margin-bottom: 5px;
+        }
+        .contact--image {
+            width: 15px;
+            margin-right: 5px;
+        }
+    </style>
+
+    <div class="welcome-cont">
+        <div class="welcome">
+            <div class="welcome--main">
+                <img class="logo" src="resources/images/TBW_Transparent_Logo.png" alt="logo">
+                <h1 class="welcome--header">እውነትን በፍቃድ | Truth By Will</h1>
+                
+                <div class="overlay">
+                    <img class="rocket" src="resources/images/rocket.gif" alt="rocket">
+                    <p class="welcome--text">WE ARE ALMOST READY TO LAUNCH!</p>
+                </div>
+            </div>
+
+            
+            <footer>
+                <div class="social-and-address">
+                    <p class="social-label">WATCH OUR LATEST CONTENTS</p>
+                    <div class="social-medias">
+                        <a target="_blank" href="https://www.youtube.com/@truthByWill">
+                            <img class="icons" src="resources/images/youtube.png" alt="youtube">
+                        </a>
+                        
+                        <a target="_blank" target="_blank" href="https://www.facebook.com/truthByWill">
+                            <img class="icons" src="resources/images/facebook.png" alt="facebook">
+                        </a>
+                        
+                        <a target="_blank" href="https://www.tiktok.com/@truth_bywill">
+                            <img class="icons" src="resources/images/tiktok.png" alt="tiktok">
+                        </a>
+                        
+                        <a target="_blank" href="https://t.me/truthByWill_yt">
+                            <img class="icons" src="resources/images/telegram.png" alt="telegram">
+                        </a>
+                    </div>
+                    
+                    <div class="address">
+                        <img class="location-icon" src="resources/images/location.gif" alt="location">
+                        <span>Hayat Hospital To Bole Brass Road, TGL Bldg, 4th Floor</span>
+                    </div>
+                </div>
+
+                <div class="contact">
+                    <p class="contact-label">CONTACT US</p>
+                    <div class="contact--info">
+                        <img class="contact--image" src="resources/images/email.png" alt="email"> 
+                        <span>info@truthbywill.org</span>
+                    </div>
+
+                    <div class="contact--info">
+                        <img class="contact--image" src="resources/images/phone.png" alt="phone"> 
+                        <span>+2519 85 27 19 49</span> 
+                         &nbsp; | &nbsp;
+                        <img class="contact--image" src="resources/images/phone.png" alt="phone"> 
+                        <span>+2517 07 27 19 49</span>
+                    </div>
+                    
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
