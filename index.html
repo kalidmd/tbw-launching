@@ -19,6 +19,9 @@
         body {
             font-family: 'Maven Pro', sans-serif;
         }
+        img {
+            max-width: 100%;
+        }
         ::after, ::before  {
             box-sizing: border-box;
         }
@@ -32,10 +35,10 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: space-around;
+            justify-content: space-between;
             /* gap: 30px; */
-            width: 80%;
-            height: 90%;
+            width: 90%;
+            height: 95%;
             margin: 0 auto;
             border-radius: 8px;
             text-align: center;
@@ -45,13 +48,22 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
+            /* gap: 15px; */
+        }
+        .welcome--header {
+            /* color:rgb(27, 115, 255); */
+            font-weight: 800;
+            margin-bottom: 10px;
         }
         .logo {
             width: 120px;
         }
         .overlay {
             width: 250px;
+            height: 270px;
             position: relative;
+            background-color: rgb(11, 174, 207);
+            border-radius: 8px;
         }
         .rocket {
             width: 200px;
@@ -60,21 +72,44 @@
             position: absolute;
             font-size: 25px;
             font-weight: 800;
-            bottom: 0;
-            left: 0;  
+            color: #fff;
+            bottom: 20px;
+            left: 12px;  
+            width: 90%;
         }
         footer {
             width: 100%;
             display: flex;
             justify-content: space-around;
+            margin-bottom: 20px;
             /* background-color: red; */
+        }
+        .arrow {
+            position: relative;
+        }
+        .arrow--text {
+            margin-top: 9px;
+            font-style: italic;
+        }
+        .tuned {
+            font-weight: 800;
+            font-style: normal;
+            color: rgb(11, 174, 207);
+        }
+        .arrow--image {
+            position: absolute;
+            top: 25px;
+            left: 2px;
+            width: 60px;
         }
         .social-and-address{
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            /* background-color: yellow; */
+            /* background-color: #dcdcdc; */
+            padding: 20px;
+            /* border-radius: 8px; */
         }
         .social-label, .contact-label {
             margin-bottom: 7px;
@@ -99,23 +134,100 @@
             justify-content: center;
         }
         .location-icon {
-            width: 20px;
+            max-width: 22px;
         }
         .contact {
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            /* background-color: green; */
+            /* background-color: #dcdcdc; */
+            padding: 20px;
+            /* border-radius: 8px; */
         }
         .contact--info {
             display: flex;    
             align-items: center;
+            justify-content: center;
             margin-bottom: 5px;
         }
         .contact--image {
             width: 15px;
-            margin-right: 5px;
+            margin-right: 3px;
+        }
+        .phone-cont {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        /* 320px — 480px: Mobile devices
+        481px — 768px: iPads, Tablets
+        769px — 1024px: Small screens, laptops
+        1025px — 1200px: Desktops, large screens
+        1201px and more —  Extra large screens, TV
+        My PC 1536 * 834
+        My Phone 412 * 780 */
+        
+        @media screen and (min-width: 320px) and (max-width: 481px) {
+            body {
+                background-color: blue;
+            }
+            .welcome--header {
+                margin-bottom: 30px;
+            }
+            footer {
+                flex-direction: column;
+                width: 95%;
+                margin: 0 auto 10px;
+                background-color: #dcdcdc;
+                border-radius: 6px;
+                padding: 20px;
+            }
+            .arrow--image {
+                transform: rotate(333deg);
+                top: 20px;
+                left: 25px;
+                width: 45px;
+            }
+            .arrow--text {
+                margin-top: 0;
+            }
+            .social-and-address, .contact {
+                padding: 0;
+            }
+            .contact {
+                margin-top: 15px;
+            }
+            .address {
+                display: inline-block;
+                margin-top: 10px;
+            }
+            .address p {
+                display: inline;
+            }
+            .location-icon {
+                transform: translateY(5px);
+            }
+        }
+        @media screen and (min-width: 481px) {
+            body {
+                background-color: red;
+            }
+        }
+        @media screen and (min-width: 769px) {
+            body {
+                background-color: yellow;
+            }
+        }
+        @media screen and (min-width: 1025px) {
+            body {
+                background-color: indigo;
+            }
+        }
+        @media screen and (min-width: 1201px) {
+            body {
+                background-color: orange;
+            }
         }
     </style>
 
@@ -127,11 +239,16 @@
                 
                 <div class="overlay">
                     <img class="rocket" src="resources/images/rocket.gif" alt="rocket">
-                    <p class="welcome--text">WE ARE ALMOST READY TO LAUNCH!</p>
+                    <p class="welcome--text">Hi, WE ARE ALMOST READY TO LAUNCH!</p>
                 </div>
             </div>
 
             
+            <div class="arrow">
+                <p class="arrow--text">stay <span class="tuned">TUNED</span></p>
+                <img class="arrow--image" src="resources/images/curly-arrow.png" alt="arrow">
+            </div>
+
             <footer>
                 <div class="social-and-address">
                     <p class="social-label">WATCH OUR LATEST CONTENTS</p>
@@ -155,7 +272,7 @@
                     
                     <div class="address">
                         <img class="location-icon" src="resources/images/location.gif" alt="location">
-                        <span>Hayat Hospital To Bole Brass Road, TGL Bldg, 4th Floor</span>
+                        <p>Hayat Hospital To Bole Brass Road, TGL Bldg, 4th Floor</p>
                     </div>
                 </div>
 
@@ -168,10 +285,9 @@
 
                     <div class="contact--info">
                         <img class="contact--image" src="resources/images/phone.png" alt="phone"> 
-                        <span>+2519 85 27 19 49</span> 
-                         &nbsp; | &nbsp;
-                        <img class="contact--image" src="resources/images/phone.png" alt="phone"> 
-                        <span>+2517 07 27 19 49</span>
+                        <div class="phone-cont">
+                            +2519 85 27 19 49 | +2517 07 27 19 49 
+                        </div>
                     </div>
                     
                 </div>
