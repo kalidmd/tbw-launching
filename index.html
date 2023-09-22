@@ -124,8 +124,8 @@
             width: 90%;
             position: absolute;
             bottom: 10px;
-            left: 15px;
-            font-size: 17px;
+            left: 16px;
+            font-size: 16px;
             color: #fff;
         }
         .stay {
@@ -157,6 +157,7 @@
             width: 28px;
         }
         .location {
+            width: 99%;
             margin: 23px 0;
         }
         .location--icon {
@@ -164,7 +165,7 @@
             transform: translateY(5px);
         }
         .contact {
-            width: 95%;
+            width: 100%;
         }
         .contact-info {
             padding-bottom: 5px;
@@ -188,14 +189,9 @@
         1201px and more —  Extra large screens, TV
         My PC 1536 * 834
         My Phone 412 * 780 */
-
-                /* MEDIA QUERY MIN-WIDTH = 481  */
-        @media screen and (min-width: 400px) {
-            .overlay {
-                max-width: 300px;
-            }
+        @media screen and (min-height: 700px) {
             html {
-                height: 100%;
+                   height: 100%;
             }
             body {
                 display: flex;
@@ -205,21 +201,16 @@
             .footer {
                 margin-top: auto;
             }
-            .main {
-                margin-top: 25px;
+        }
+                /* MEDIA QUERY MIN-WIDTH = 481  */
+        @media screen and (min-width: 481px) {
+            .overlay {
+                max-width: 300px;
             }
         }
-        @media screen and (min-width: 811px) {
-            html {
-                height: 100%;
-            }
-            body {
-                display: flex;
-                flex-direction: column;
-                min-height: 100vh;
-            }
+        @media screen and (min-width: 811px) {    
             .main {
-                margin-top: 50px;
+                margin-top: 20px;
             }
             .main--head h1 {
                 font-size: 32px;
@@ -231,7 +222,6 @@
                 font-size: 18px;
             }
             .footer {
-                margin-top: auto;
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
                 align-items: center;
