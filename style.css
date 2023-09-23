@@ -17,8 +17,9 @@ body {
     font-family: 'Maven Pro', sans-serif;
     background-image: url(/resources/images/bg-image.jpg);
     background-size: cover;
-    height: 100vh;
+    /* height: 100vh; */
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
