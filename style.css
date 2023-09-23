@@ -17,16 +17,16 @@ body {
     font-family: 'Maven Pro', sans-serif;
     background-image: url(/resources/images/bg-image.jpg);
     background-size: cover;
-    background-repeat: no-repeat;
     height: 100vh;
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
                 /* STYLE FOR SMARTPHONES (MIN-WIDTH = 320PX) */
 .main {
     background-color: #fff;
     width: 95%;
-    height: 95%;
-    margin: auto auto;
+    margin: 20px auto;
     border-radius: 10px;
     opacity: 0.9;
 }
@@ -98,16 +98,16 @@ body {
 .overlay {
     max-width: 260px;
     height: 260px;
-    margin: 20px auto;
+    margin: 20px auto 67px;
     background-color: #1881ff;
     position: relative;
     display: flex;
-    display: -webkit-flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     border-radius: 10px;
     box-shadow: -5px -4px 47px 3px rgba(198, 198, 198, 0.3);
+    padding-bottom: 20px;
 }
 .overlay--image {
     width: 200px;
@@ -136,7 +136,9 @@ body {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding-top: 60px;
+    background-color: #dcdcdc;
+    margin: 30px;
+    border-radius: 12px;
 }
 .social {
     display: flex;
@@ -202,10 +204,9 @@ My Phone 412 * 780 */
         margin-top: auto;
     }
 } */
-@media screen and (min-height: 930px) {
+/* @media screen and (min-height: 930px) {
     .main {
         height: 600px;
-        /* margin-top: 20px; */
     }
     .main--head {
         margin-top: 10px;
@@ -216,26 +217,13 @@ My Phone 412 * 780 */
 }
 
         /* MEDIA QUERY MIN-WIDTH = 481  */
-@media screen and (min-width: 481px) {
+/* @media screen and (min-width: 481px) {
     .overlay {
         max-width: 300px;
     }
 }
 @media screen and (min-width: 811px) {    
-    /* html {
-            height: 100%;
-    }
-    body {
-        display: flex;
-        display: -webkit-flex;
-        flex-direction: column;
-        min-height: 100vh;
-    }
-    .footer {
-        margin-top: auto;
-    } */
     .main {
-        /* margin-top: 20px; */
     }
     .main--head h1 {
         font-size: 32px;
@@ -250,7 +238,6 @@ My Phone 412 * 780 */
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         align-items: center;
-        /* padding-top: 15px; */
     }
     .contact {
         width: 100%;
@@ -310,4 +297,4 @@ My Phone 412 * 780 */
         font-size: 17px;
         margin: 14px 0;
     }
-}
+} */
