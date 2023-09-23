@@ -45,6 +45,7 @@
         }
         .main--head {
             display: flex;
+            display: -webkit-flex;
             flex-direction: column;
             align-items: center;
             text-align: center;
@@ -67,6 +68,7 @@
             inset: -2px 39px;
             background: linear-gradient(315deg, #1881ff, rgb(241, 153, 70));
             animation: animate 4s ease infinite;
+            -webkit-animation: animate 4s ease infinite;
         }
         .logo-container::after {
             content: '';
@@ -96,9 +98,11 @@
         @keyframes animate {
             0% {
                 transform: rotate(0deg);
+                -webkit-transform: rotate(0deg)
             }
             100% {
                 transform: rotate(360deg);
+                -webkit-transform: rotate(360deg);
             }
         }
         .main--head h1 {
@@ -111,6 +115,7 @@
             background-color: #1881ff;
             position: relative;
             display: flex;
+            display: -webkit-flex;
             justify-content: center;
             align-items: center;
             text-align: center;
@@ -140,6 +145,7 @@
         }
         .footer {
             display: flex;
+            display: -webkit-flex;
             flex-direction: column;
             align-items: center;
             text-align: center;
@@ -148,6 +154,7 @@
         }
         .social {
             display: flex;
+            display: -webkit-flex;
             width: 150px;
             justify-content: space-between;
             align-items: center;
@@ -189,28 +196,25 @@
         1201px and more —  Extra large screens, TV
         My PC 1536 * 834
         My Phone 412 * 780 */
+        /* FOR MACBOOK SAFARI */
+        /* @media only screen  and (min-height: 650px) and  (min-width: 1200px){
+            .main {
+                background-color: indigo;
+            }
+        } */
         @media screen and (min-height: 771px) {
             html {
                    height: 100%;
             }
             body {
                 display: flex;
+                display: -webkit-flex;
                 flex-direction: column;
                 min-height: 100vh;
             }
             .footer {
                 margin-top: auto;
             }
-            /* .main {
-                background-color: red;
-                height: 600px;
-            }
-            .main--head {
-                margin-top: 10px;
-            }
-            .overlay {
-                margin-top: 65px;
-            } */
         }
         @media screen and (min-height: 930px) {
             .main {
@@ -232,6 +236,18 @@
             }
         }
         @media screen and (min-width: 811px) {    
+            html {
+                   height: 100%;
+            }
+            body {
+                display: flex;
+                display: -webkit-flex;
+                flex-direction: column;
+                min-height: 100vh;
+            }
+            .footer {
+                margin-top: auto;
+            }
             .main {
                 margin-top: 20px;
             }
