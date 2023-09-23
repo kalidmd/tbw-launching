@@ -18,14 +18,17 @@ body {
     background-image: url(/resources/images/bg-image.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
 }
                 /* STYLE FOR SMARTPHONES (MIN-WIDTH = 320PX) */
 .main {
     background-color: #fff;
     width: 95%;
-    margin: 15px auto;
+    height: 95%;
+    margin: auto auto;
     border-radius: 10px;
-    padding-bottom: 1px;
+    opacity: 0.9;
 }
 .main--head {
     display: flex;
@@ -133,8 +136,7 @@ body {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    background-color: #fff;
-    opacity: 0.8;
+    padding-top: 60px;
 }
 .social {
     display: flex;
@@ -186,7 +188,7 @@ My Phone 412 * 780 */
         background-color: indigo;
     }
 } */
-@media screen and (min-height: 771px) {
+/* @media screen and (min-height: 799px) {
     html {
             height: 100%;
     }
@@ -199,11 +201,11 @@ My Phone 412 * 780 */
     .footer {
         margin-top: auto;
     }
-}
+} */
 @media screen and (min-height: 930px) {
     .main {
         height: 600px;
-        margin-top: 20px;
+        /* margin-top: 20px; */
     }
     .main--head {
         margin-top: 10px;
@@ -220,7 +222,7 @@ My Phone 412 * 780 */
     }
 }
 @media screen and (min-width: 811px) {    
-    html {
+    /* html {
             height: 100%;
     }
     body {
@@ -231,9 +233,9 @@ My Phone 412 * 780 */
     }
     .footer {
         margin-top: auto;
-    }
+    } */
     .main {
-        margin-top: 20px;
+        /* margin-top: 20px; */
     }
     .main--head h1 {
         font-size: 32px;
@@ -248,7 +250,7 @@ My Phone 412 * 780 */
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         align-items: center;
-        padding-top: 15px;
+        /* padding-top: 15px; */
     }
     .contact {
         width: 100%;
